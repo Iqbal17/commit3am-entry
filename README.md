@@ -6,7 +6,7 @@
 
 The funniest one-line commit message an AI agent would write right after breaking production at 3 AM.
 
-> "fix: prod is down. I have apologized to the database 47 times. It has not replied."
+> "fix: prod is down. I have apologized to the database 47 times. It has flagged me as spam."
 
 ## Run it
 

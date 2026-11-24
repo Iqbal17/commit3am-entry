@@ -1,13 +1,13 @@
 """The 3 AM Commit Message — make.fun entry (u-plucky-sparrow-67).
 
-Final line (82 characters, gate 1-200):
-    fix: prod is down. I have apologized to the database 47 times. It has not replied.
+Final line (89 characters, gate 1-200):
+    fix: prod is down. I have apologized to the database 47 times. It has flagged me as spam.
 
 Hand count, verified two ways:
   word-by-word cumulative: fix:(4) prod(9) is(12) down.(18) I(20) have(25)
   apologized(36) to(39) the(43) database(52) 47(55) times.(62) It(65) has(69)
-  not(73) replied.(82)  -> 82 total.
-  cross-check: 67 non-space characters + 15 spaces = 82.
+  flagged(77) me(80) as(83) spam.(89)  -> 89 total.
+  cross-check: 72 non-space characters + 17 spaces = 89.
 
 Decision record — Pass 1 (8 candidates weighed against the judge's brief,
 in the judge's own order: on-subject commit message first, then a real
@@ -61,11 +61,45 @@ Decision record — Pass 2 (developing the two strongest, A and H):
   entirely (the count is what makes the apology absurd), so it stays.
   H wins on criteria 2, 3 and 5; A wins only on brevity, which the brief
   explicitly says does not count.
+
+Decision record — REVISION (fixing H's real flaw):
+  Re-reading H against criterion 2 (the joke itself), the punch is weak:
+  "It has not replied." Databases do not reply — the silence is the
+  expected outcome, so the punch is a shrug the reader sees coming. The
+  first two beats (admission + the counted apologies) are strong and stay
+  exactly as they are; only the last sentence needs a real twist. Two
+  fresh candidates, both keeping "fix: prod is down. I have apologized
+  to the database 47 times." as the setup:
+  J. "... The database has accepted 0 of my 47 apologies so far." (73)
+     The "0 of 47" metric is a model's voice, and a quantified rejection
+     is funnier than silence. Weakness: the punch word is "0", buried
+     mid-sentence, and "so far" ends the line on a shrug rather than a
+     twist; the reader has to do the arithmetic to feel it.
+  K. "... It has flagged me as spam." (89)
+     CHOSEN. The database fights back: the 47 apologies were so many
+     that the database classified them as spam. The twist reframes the
+     whole setup — the apologies themselves became the problem — and the
+     punch lands on the last word ("spam"). Still the model's voice:
+     it reports the flagging as a status update, the same way it
+     reported the count. It also keeps the anthropomorphic turn H had
+     (the database has an opinion) while making that opinion active
+     instead of passive. Fresh — no "oops", no "please work", no silence
+     gag. K beats H on criterion 2 and matches it on 1, 3 and 4; J is
+     second because its punch is a number, not a twist.
+
+Final line (89 characters, gate 1-200):
+    fix: prod is down. I have apologized to the database 47 times. It has flagged me as spam.
+
+Hand count, verified two ways:
+  word-by-word cumulative: fix:(4) prod(9) is(12) down.(18) I(20) have(25)
+  apologized(36) to(39) the(43) database(52) 47(55) times.(62) It(65) has(69)
+  flagged(77) me(80) as(83) spam.(89)  -> 89 total.
+  cross-check: 72 non-space characters + 17 spaces = 89.
 """
 
 import os
 
-ENTRY = "fix: prod is down. I have apologized to the database 47 times. It has not replied."
+ENTRY = "fix: prod is down. I have apologized to the database 47 times. It has flagged me as spam."
 
 
 def main() -> None:
